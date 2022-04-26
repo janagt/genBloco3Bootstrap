@@ -29,7 +29,7 @@ html {
 }
 
 .img-header-container {
-    background-image: url(http://127.0.0.1:5501/assets/img/slide2.png);
+    background-image: url(./assets/img/slide2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,7 +37,7 @@ html {
 }
 
 .img-session-container {
-    background-image: url(http://127.0.0.1:5501/assets/img/slide1.png);
+    background-image: url(./assets/img/slide1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
