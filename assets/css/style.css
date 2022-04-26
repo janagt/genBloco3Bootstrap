@@ -28,13 +28,6 @@ html {
     margin: 10rem 0;
 }
 
-
-/* .class-img-container{
-    background-image: url(http://127.0.0.1:5501/assets/img/slide1.png);
-    background-size: cover;
-
-} */
-
 .img-header-container {
     background-image: url(http://127.0.0.1:5501/assets/img/slide2.png);
     background-repeat: no-repeat;
@@ -114,12 +107,6 @@ html {
 .session-service{
     color: var(--dourado);
 }
-
-/* .session-circle-social {
-    background-color: #fff;
-    padding: 1rem;
-}
- */
 
 
 /* Estilização Scroll Bar*/

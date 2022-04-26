@@ -48,7 +48,7 @@ function validaAssunto() {
 	let txtAssunto = document.querySelector("#txtAssunto");
 
 	if (assunto.value.length < 3) {
-	  txtAssunto.innerHTML = "O nome precisa ter mais do que 3 caracteres.";
+	  txtAssunto.innerHTML = "O assunto precisa ter mais do que 3 caracteres.";
 	  txtAssunto.style.color = "#DC3545";
 	} else {
 		txtAssunto.innerHTML = "Nome válido!";
