@@ -36,7 +36,6 @@ function validaEmail() {
   if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
     txtEmail.innerHTML = "O email precisa ter @ e .";
     txtEmail.style.color = "#DC3545";
-	txtEmail.style. = "smaller"
   } else {
     txtEmail.innerHTML = "E-mail válido";
     txtEmail.style.color = "#28A745";
