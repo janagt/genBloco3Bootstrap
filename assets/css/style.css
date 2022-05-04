@@ -19,9 +19,14 @@ html {
     /* user-select: none; */
 }
 
-/* li.nav-item\.active {
-    background-color: red!important;
-} */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--dourado)!important;
+    background-color: transparent!important;
+}
+
+a.nav-link {
+    color: #212529!important;
+}
 
 
 .m-title {
