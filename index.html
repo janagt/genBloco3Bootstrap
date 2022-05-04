@@ -11,16 +11,17 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/d9e93214e3.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 fixed-top">
-            <div class="container"><a class="navbar-brand" href="#">
+<body data-spy="scroll" data-target="#navbar">
+    <!-- <header> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
                     <!-- <img src="./assets/img/logo-s.webp"
                         alt="Logotipo do Adrenaline"> -->Janaina
                 </a>
@@ -31,9 +32,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mra-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#sessao-home">Home <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav mra-auto" role="button">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sessao-home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sessao-servicos">Serviços</a>
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    <!-- </header> -->
 
     <main>
         <!-- INÍCIO IMAGEM FULL -->
