@@ -19,6 +19,15 @@ html {
     /* user-select: none; */
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--dourado)!important;
+    background-color: transparent!important;
+}
+
+a.nav-link {
+    color: #212529!important;
+}
+
 
 .m-title {
     margin: 7rem 0 4rem;
@@ -29,7 +38,7 @@ html {
 }
 
 .img-header-container {
-    background-image: url(https://janagt-b3-bootstrap.vercel.app/assets/img/slide2.png);
+    background-image: url(../img/slide2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,7 +46,7 @@ html {
 }
 
 .img-session-container {
-    background-image: url(https://janagt-b3-bootstrap.vercel.app/assets/img/slide1.png);
+    background-image: url(../img/slide1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

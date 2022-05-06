@@ -31,7 +31,7 @@ function validaNome() {
 }
 
 function validaEmail() {
-  let txtEmail = document.querySelector("#txtEmail");
+/*   let txtEmail = document.querySelector("#txtEmail");
 
   if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
     txtEmail.innerHTML = "O email precisa ter @ e .";
@@ -40,6 +40,16 @@ function validaEmail() {
     txtEmail.innerHTML = "E-mail válido";
     txtEmail.style.color = "#28A745";
     emailOk = true;
+  } */
+  let regex = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/
+  if(email.value.match(regex)){
+      txtEmail.innerHTML = "E-mail válido!"
+      txtEmail.style.color = "#28A745"
+      emailOk = true
+  }else{
+      txtEmail.innerHTML = "E-mail inválido!"
+      txtEmail.style.color = "#DC3545"
+      emailOk = false
   }
 }
 
@@ -71,8 +81,20 @@ function validaMensagem() {
 
 function enviar() {
   if (nomeOk == true && emailOk == true && assuntoOk == true && mensagemOk == true) {
-    alert("Formulário enviado com sucesso!");
+/*     alert("Formulário enviado com sucesso!");
   } else {
-    alert("Preencha todos os campos corretamente!");
+    alert("Preencha todos os campos corretamente!"); */
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Formulário enviado com sucesso!',
+      showConfirmButton: false,
+      timer: 1500
+    })
+}else{
+  Swal.fire({
+      icon: 'error',
+      title: 'Preencha antes o formulário corretamente!',
+    })
   }
 }

@@ -13,45 +13,47 @@
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/d9e93214e3.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 fixed-top">
-            <div class="container"><a class="navbar-brand" href="#">
-                    <!-- <img src="./assets/img/logo-s.webp"
+<body data-spy="scroll" data-target="#navbar-example" data-offset="0">
+    <!-- <header> -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light bg-light p-4 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="./assets/img/logo-s.webp"
                         alt="Logotipo do Adrenaline"> -->Janaina
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mra-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#sessao-home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sessao-servicos">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sessao-portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sessao-depoimentos">Depoimentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sessao-contato">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav nav-pills" role="button"><!-- 
+                    <ul class="navbar-nav mra-auto" role="button"> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sessao-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sessao-servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sessao-portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sessao-depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sessao-contato">Contato</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <!-- </header> -->
 
     <main>
         <!-- INÍCIO IMAGEM FULL -->
@@ -301,8 +303,8 @@
         </div>
         <div class="row mb-2  align-items-center">
             <div class="col-10 copyright">
-                Desenvolvido com <i
-                class="fa fa-heart-o mr-1 ml-1" aria-hidden="true"></i> por <a class="text-dark" href="http://github.com/janagt" target="_blank">@janagt</a>
+                Desenvolvido com <i class="fa fa-heart-o mr-1 ml-1" aria-hidden="true"></i> por <a class="text-dark"
+                    href="http://github.com/janagt" target="_blank">@janagt</a>
             </div>
             <div class="col-2 justify-content-end text-right">
                 <button class="btn btn-dark" onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i
